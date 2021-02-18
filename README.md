@@ -1,2 +1,2 @@
 # learnfromdatabase
-Firestore + Javascript + HTML/CSS + Bootstrap
+Firestore + Javascript + ElectronJS + HTML/CSS + Bootstrap
