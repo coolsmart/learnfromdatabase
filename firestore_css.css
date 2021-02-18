@@ -1,0 +1,112 @@
+
+	h1{
+	font-family: 'Great Vibes', cursive;
+	}
+
+	#delete_button{
+		color: #FF6B33;
+	}
+
+	#id_countezber, #id_countdevam,#id_count {
+		padding: 10px;
+		display: inline-block;
+		font-weight: bold;
+		margin-right: 2px;
+	}
+
+	#id_countezber {
+		background-color: #b3ffb3;
+		border:1px solid #33cc33;
+	}
+
+	#id_countdevam{
+		background-color: #ffffb3;
+		border:1px solid #cc6600;
+	}
+
+	#id_count{
+		background-color: #ffbf80;
+		border:1px solid #cc6600;
+	}
+
+	#id_countdiv{
+		margin 0;padding:20px;
+	}
+
+	#id_kelimecell{
+	font-family : 'Roboto Condensed';
+	font-weight: bold;	
+	font-size : 19px;
+	background-color : #ffffb3;
+	border : 1px solid #0099ff;
+	border-color:#cc6600 ;
+	padding-left: 5px;
+	padding-right: 2px;
+	}
+
+	#id_anlamcell{
+   	font-size: 16px;
+	background-color : #b3ecff;
+	border : 1px solid #0099ff;
+	padding-left: 5px;
+	padding-right: 2px;
+	}
+
+	#id_buttoncell{
+	width : 1px;
+	border : 1px solid lightblue;
+	padding:0px;
+	padding-top : 5px;
+	font-color: red;
+	}
+
+	#id_cumlecell{
+	width : 1px;
+	border : 1px solid lightblue;
+	padding:0px;
+	padding-top : 5px;
+
+	}
+
+	#id_checkboxcell{
+
+	width : 1px;
+	border : 1px solid lightblue;
+	padding:0px;
+	padding-top : 13px;
+	}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  background-color: #b3ecff;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+#close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

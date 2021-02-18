@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vocabulary Builder</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="firestore_css.css">
+
+</head>
+
+<body>
+
+<div class="container text-center">
+	<br>
+	<h1>Vocabulary Builder</h1>	
+	
+	<ul class="nav nav-tabs m-2">
+	  <li class="nav-item">
+	    <a class="nav-link active" href="#"><i class="fas fa-clipboard-list fa-2x"></i></a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="firestore_kaydet.html"><i class="fas fa-plus-circle fa-2x"></i></a>
+	  </li>
+	</ul>
+</div>
+
+
+<div class="container" id="id_countdiv">	
+<span id="id_countezber">-></span><span id="id_countdevam"></span><span>-></span><span id="id_count"></span><button class="btn" onclick="toplam()" title="Update numbers"><i class="fas fa-sync fa-lg"></i></button><button class="btn" onclick="kaldigimkelimeyikaydet()" title="Save last word"><i class="fas fa-save fa-lg"></i></button>
+</div>
+
+
+<div id="id_cumlekutusu" class="modal">
+
+  <div class="modal-content">
+    <span id="close">&times;</span>
+    <p id="id_cumle"></p>
+  </div>
+
+</div>
+
+<div class="container">		
+
+	<div class="row">
+      <div class="col"> 
+
+		<table class="table table-responsive" id="myTable">
+		</table>
+
+		<div id="bos_alan"></div>
+
+ <div class="row">
+	<div class="col">
+		<button type="button" class="btn btn-outline-primary btn-block" id="id_more"><i class="fas fa-arrow-circle-down fa-lg"></i></button><button class="btn" onclick="kaldigimkelimeyikaydet()" title="Save last word"><i class="fas fa-save fa-lg"></i></button>
+    </div>
+  </div>
+		<script src='firestore_connect.js'></script> 
+		<script src='firestore_ekranayazdir.js'></script>
+	</div>
+   </div>
+</div>
+
+</body>
+</html>
